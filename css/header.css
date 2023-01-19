@@ -1,7 +1,7 @@
 .header {
     background-color: #eb3d3d;
-    border-radius: 3px;;
-    box-shadow: 2px 2px 3px rgb(122, 24, 24);
+    border-radius: 3px;
+    box-shadow: 2px 2px 3px #7a1818;
 }
 
 .header__title {
