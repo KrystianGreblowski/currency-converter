@@ -1,3 +1,8 @@
+.form {
+    max-width: 344px;
+    margin: 50px auto;
+}
+
 .form__fieldset {
     border: 1px solid #ccc;
     padding: 10px;
