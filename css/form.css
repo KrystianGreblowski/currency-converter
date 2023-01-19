@@ -1,10 +1,11 @@
 .form {
     max-width: 344px;
-    margin: 50px auto;
+    margin: 130px auto;
 }
 
 .form__fieldset {
-    border: 1px solid #ccc;
+    background-color: #fcfbfb;
+    border: 1px solid #aaa;
     padding: 10px;
     border-radius: 3px;
     box-shadow: 1px 1px 3px hsl(0, 0%, 50%);

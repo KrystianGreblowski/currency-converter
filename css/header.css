@@ -1,12 +1,13 @@
 .header {
     background-color: #eb3d3d;
     border-radius: 3px;
-    box-shadow: 2px 2px 3px #7a1818;
+    box-shadow: 1px 1px 3px #7a1818;
 }
 
 .header__title {
     color: white;
     text-align: center;
-    font-size: 40px;
-    padding: 8px;
+    font-size: 30px;
+    font-weight: normal;
+    padding: 6px;
 }

@@ -7,9 +7,11 @@ html {
 }
 
 .body {
+    max-width: 1000px;
+    margin: auto;
     font-family: 'Lato', sans-serif;
     padding: 0 20px;
-    background-image: url(https://i.postimg.cc/rmzMFvd3/background-image.jpg);
+    background-image: url(../images/background-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
