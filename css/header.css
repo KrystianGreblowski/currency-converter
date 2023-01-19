@@ -1,0 +1,12 @@
+.header {
+    background-color: #eb3d3d;
+    border-radius: 3px;;
+    box-shadow: 2px 2px 3px rgb(122, 24, 24);
+}
+
+.header__title {
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 8px;
+}
