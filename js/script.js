@@ -1,31 +1,34 @@
 {
-    const updateRateValue = () => {
-        const selectCurrencyElement = document.querySelector(".js-selectCurrency");
+    const updateRateValue = (currentCurrency) => {
         const eurRate = 4.71;
         const plnRate = 0.21;
 
-        return (selectCurrencyElement.value === "eur") ? eurRate : plnRate;
+        return (currentCurrency === "eur") ? eurRate : plnRate;
     }
 
-    const updateCurrency = () => {
-        const selectCurrencyElement = document.querySelector(".js-selectCurrency");
-
-        return (selectCurrencyElement.value === "eur") ? "PLN" : "EUR";
+    const updateCurrency = (currentCurrency) => {
+        return (currentCurrency === "eur") ? "PLN" : "EUR";
     }
 
     const setRateText = () => {
         const currencyRateElement = document.querySelector(".js-currencyRate");
+        const selectCurrencyElement = document.querySelector(".js-selectCurrency");
+        
+        const currentCurrency = selectCurrencyElement.value;
 
-        currencyRateElement.innerText = (updateCurrency() === "EUR") ? `1 PLN = ${updateRateValue()} EUR` : `1 EUR = ${updateRateValue()} PLN`;
+        currencyRateElement.innerText = (updateCurrency(currentCurrency) === "EUR") ? `1 PLN = ${updateRateValue(currentCurrency)} EUR` : `1 EUR = ${updateRateValue(currentCurrency)} PLN`;
     }
 
     const calculateResult = () => {
-        const resultElement = document.querySelector(".js-result");
         const inputAmountElement = document.querySelector(".js-inputAmount");
+        const selectCurrencyElement = document.querySelector(".js-selectCurrency");
+        const resultElement = document.querySelector(".js-result");
+        
         const inputAmount = inputAmountElement.value;
+        const currentCurrency = selectCurrencyElement.value;
 
-        const result = inputAmount * updateRateValue();
-        resultElement.innerText = (result < 0) ? `0.00 ${updateCurrency()}` : `${result.toFixed(2)} ${updateCurrency()}`;
+        const result = inputAmount * updateRateValue(currentCurrency);
+        resultElement.innerText = (result < 0) ? `0.00 ${updateCurrency(currentCurrency)}` : `${result.toFixed(2)} ${updateCurrency(currentCurrency)}`;
     }
 
     const init = () => {
