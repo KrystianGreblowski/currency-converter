@@ -8,10 +8,11 @@ html {
 
 .body {
     max-width: 1000px;
+    min-height: 100vh;
     margin: auto;
     font-family: 'Lato', sans-serif;
     padding: 0 20px;
-    background-image: url(../images/background-image.jpg);
+    background-image: url(../images/background-image-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
