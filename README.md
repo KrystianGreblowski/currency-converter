@@ -11,4 +11,4 @@ It's a simple currency converter for the euro and the Polish currency. It's a we
 ## Technologies
 - HTML
 - CSS
-- JavaScript (ES6+)
+- JavaScript(ES6+)
