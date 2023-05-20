@@ -8,7 +8,7 @@ It's a simple currency converter for the euro and the Polish currency. It's a we
 
 ## Preview
 
-![homepage demo](images/demo.gif)
+![Currency converter demo](images/demo.gif)
 
 ## Technologies
 - HTML
