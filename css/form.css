@@ -1,6 +1,18 @@
 .form {
-    max-width: 344px;
+    max-width: 400px;
     margin: 140px auto;
+}
+
+.form__container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 10px;
+}
+
+.form__inputCurrency {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 10px;
 }
 
 .form__fieldset {
@@ -20,10 +32,6 @@
     box-shadow: 1px 1px 3px hsl(0, 81%, 26%);
 }
 
-.form__paragraph {
-    margin: 3px;
-}
-
 .form__field {
     border: 1px solid #ccc;
     border-radius: 3px;
@@ -32,23 +40,13 @@
     box-shadow: 1px 1px 3px #706f6f;
     text-align: center;
     background-color: #eee;
-    margin: 3px 0;
 }
 
 .form__field--input {
     background-color: white;
-    margin-right: 5px;
-    max-width: 150px;
-}
-
-.form__field--labelText {
-    display: inline-block;
-    margin-right: 6px;
-    max-width: 80px;
 }
 
 .form__field--select {
-    max-width: 65px;
     padding: 5px;
     cursor: pointer;
 }
@@ -57,16 +55,9 @@
     background-color: hsl(0, 0%, 85%);
 }
 
-.form__field--rate {
-    display: inline-block;
-    max-width: 223px;
-}
-
 .form__field--result {
     background-color: #eb3d3d;
     box-shadow: 1px 1px 3px hsl(0, 81%, 26%);
     color: white;
     border: none;
-    display: inline-block;
-    max-width: 223px;
 }

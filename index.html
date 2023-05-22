@@ -32,34 +32,32 @@
     <form class="form js-form">
       <fieldset class="form__fieldset">
         <legend class="form__legend">Przelicznik EUR/PLN</legend>
-        <p class="form__paragraph">
-          <label>
-            <span class="form__field form__field--labelText">Kwota</span>
-            <input
-              class="form__field form__field--input js-inputAmount"
-              type="number"
-              name="inputAmount"
-              placeholder="0.00"
-            />
-          </label>
-          <select
-            class="form__field form__field--select js-selectCurrency"
-            name="currency"
-          >
-            <option value="eur" selected>EUR</option>
-            <option value="pln">PLN</option>
-          </select>
-        </p>
-        <p class="form__paragraph">
-          <span class="form__field form__field--labelText">Kurs</span>
-          <span class="form__field form__field--rate js-currencyRate"></span>
-        </p>
-        <p class="form__paragraph">
-          <span class="form__field form__field--labelText">Wynik</span>
+        <div class="form__container">
+          <span class="form__field">Kwota</span>
+          <div class="form__inputCurrency">
+            <label>
+              <input
+                class="form__field form__field--input js-inputAmount"
+                type="number"
+                name="inputAmount"
+                placeholder="0.00"
+              />
+            </label>
+            <select
+              class="form__field form__field--select js-selectCurrency"
+              name="currency"
+            >
+              <option value="eur" selected>EUR</option>
+              <option value="pln">PLN</option>
+            </select>
+          </div>
+          <span class="form__field">Kurs</span>
+          <span class="form__field js-currencyRate"></span>
+          <span class="form__field">Wynik</span>
           <span class="form__field form__field--result js-result"
             >0.00 PLN</span
           >
-        </p>
+        </div>
       </fieldset>
     </form>
 
