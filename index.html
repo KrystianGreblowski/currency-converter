@@ -1,56 +1,68 @@
 <!DOCTYPE html>
 <html lang="pl">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:image" content="images/share.png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="images/share.png" />
     <title>Kalkulator waluty Euro</title>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
-        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/form.css" rel="stylesheet">
-    <link href="css/header.css" rel="stylesheet">
-    <link href="css/footer.css" rel="stylesheet">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/header.css" rel="stylesheet" />
+    <link href="css/footer.css" rel="stylesheet" />
     <script defer src="js/script.js"></script>
-    <link rel="icon" href="images/icon.png">
-</head>
+    <link rel="icon" href="images/icon.png" />
+  </head>
 
-<body class="body">
+  <body class="body">
     <header class="header">
-        <h1 class="header__title">Kalkulator waluty Euro</h1>
+      <h1 class="header__title">Kalkulator waluty Euro</h1>
     </header>
 
     <form class="form js-form">
-        <fieldset class="form__fieldset">
-            <legend class="form__legend">
-                Przelicznik EUR/PLN
-            </legend>
-            <p class="form__paragraph">
-                <label>
-                    <span class="form__field form__field--labelText">Kwota</span>
-                    <input class="form__field form__field--input js-inputAmount" type="number" name="inputAmount"
-                        placeholder="0.00">
-                </label>
-                <select class="form__field form__field--select js-selectCurrency" name="currency">
-                    <option value="eur" selected>EUR</option>
-                    <option value="pln">PLN</option>
-                </select>
-            </p>
-            <p class="form__paragraph">
-                <span class="form__field form__field--labelText">Kurs</span>
-                <span class="form__field form__field--rate js-currencyRate"></span>
-            </p>
-            <p class="form__paragraph">
-                <span class="form__field form__field--labelText">Wynik</span>
-                <span class="form__field form__field--result js-result">0.00 PLN</span>
-            </p>
-        </fieldset>
+      <fieldset class="form__fieldset">
+        <legend class="form__legend">Przelicznik EUR/PLN</legend>
+        <p class="form__paragraph">
+          <label>
+            <span class="form__field form__field--labelText">Kwota</span>
+            <input
+              class="form__field form__field--input js-inputAmount"
+              type="number"
+              name="inputAmount"
+              placeholder="0.00"
+            />
+          </label>
+          <select
+            class="form__field form__field--select js-selectCurrency"
+            name="currency"
+          >
+            <option value="eur" selected>EUR</option>
+            <option value="pln">PLN</option>
+          </select>
+        </p>
+        <p class="form__paragraph">
+          <span class="form__field form__field--labelText">Kurs</span>
+          <span class="form__field form__field--rate js-currencyRate"></span>
+        </p>
+        <p class="form__paragraph">
+          <span class="form__field form__field--labelText">Wynik</span>
+          <span class="form__field form__field--result js-result"
+            >0.00 PLN</span
+          >
+        </p>
+      </fieldset>
     </form>
 
     <footer class="footer">Copyright © 2023 Krystian Gręblowski</footer>
-</body>
-
+  </body>
 </html>
