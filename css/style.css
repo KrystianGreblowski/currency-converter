@@ -1,18 +1,21 @@
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 *, ::after, ::before {
-    box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 .body {
-    max-width: 1000px;
-    min-height: 100vh;
-    margin: auto;
-    font-family: 'Lato', sans-serif;
-    padding: 0 10px;
-    background-image: url(../images/background-image.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  align-items: center;
+  max-width: 1000px;
+  min-height: 100vh;
+  margin: auto;
+  padding: 5px;
+  font-family: 'Lato', sans-serif;
+  background-image: url(../images/background-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
