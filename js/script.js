@@ -1,7 +1,7 @@
 {
   const updateRateValue = (currentCurrency) => {
-    const eurRate = 4.71;
-    const plnRate = 0.21;
+    const eurRate = 4.4890;
+    const plnRate = 0.2213;
 
     return currentCurrency === "eur" ? eurRate : plnRate;
   };
