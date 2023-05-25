@@ -9,6 +9,12 @@
   grid-gap: 10px;
 }
 
+@media (max-width: 767px) {
+  .form__body {
+    grid-template-columns: 1fr;
+  }
+}
+
 .form__inputValue {
   display: grid;
   grid-template-columns: 2fr 1fr;
