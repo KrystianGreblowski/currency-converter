@@ -17,50 +17,53 @@
       referrerpolicy="no-referrer"
     />
     <link href="css/style.css" rel="stylesheet" />
-    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/container.css" rel="stylesheet" />
     <link href="css/header.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
     <link href="css/footer.css" rel="stylesheet" />
     <script defer src="js/script.js"></script>
     <link rel="icon" href="images/icon.png" />
   </head>
 
   <body class="body">
-    <header class="header">
-      <h1 class="header__title">Kalkulator waluty Euro</h1>
-    </header>
+    <div class="container">
+      <header class="header">
+        <h1 class="header__title">Kalkulator waluty Euro</h1>
+      </header>
 
-    <form class="form js-form">
-      <fieldset class="form__fieldset">
-        <legend class="form__legend">Przelicznik EUR/PLN</legend>
-        <div class="form__body">
-          <span class="form__field">Kwota</span>
-          <div class="form__inputValue">
-            <label>
-              <input
-                class="form__field form__field--input js-inputAmount"
-                type="number"
-                name="inputAmount"
-                placeholder="0.00"
-              />
-            </label>
-            <select
-              class="form__field form__field--select js-selectCurrency"
-              name="currency"
+      <form class="form js-form">
+        <fieldset class="form__fieldset">
+          <legend class="form__legend">Przelicznik EUR/PLN</legend>
+          <div class="form__body">
+            <span class="form__field">Kwota</span>
+            <div class="form__inputValue">
+              <label>
+                <input
+                  class="form__field form__field--input js-inputAmount"
+                  type="number"
+                  name="inputAmount"
+                  placeholder="0.00"
+                />
+              </label>
+              <select
+                class="form__field form__field--select js-selectCurrency"
+                name="currency"
+              >
+                <option value="eur" selected>EUR</option>
+                <option value="pln">PLN</option>
+              </select>
+            </div>
+            <span class="form__field">Kurs</span>
+            <span class="form__field js-currencyRate"></span>
+            <span class="form__field">Wynik</span>
+            <span class="form__field form__field--result js-result"
+              >0.00 PLN</span
             >
-              <option value="eur" selected>EUR</option>
-              <option value="pln">PLN</option>
-            </select>
           </div>
-          <span class="form__field">Kurs</span>
-          <span class="form__field js-currencyRate"></span>
-          <span class="form__field">Wynik</span>
-          <span class="form__field form__field--result js-result"
-            >0.00 PLN</span
-          >
-        </div>
-      </fieldset>
-    </form>
+        </fieldset>
+      </form>
 
-    <footer class="footer">Copyright © 2023 Krystian Gręblowski</footer>
+      <footer class="footer">Copyright © 2023 Krystian Gręblowski</footer>
+    </div>
   </body>
 </html>
